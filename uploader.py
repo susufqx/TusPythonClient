@@ -12,14 +12,11 @@ class MyUploader(Uploader):
                          store_url=store_url, url_storage=url_storage, fingerprinter=fingerprinter, log_func=log_func)
 
     def _retry_or_cry(self, error):
-        if True:
-            time.sleep(self.retry_delay)
-
-            try:
-                self.offset = self.get_offset()
-            except TusCommunicationError as e:
-                self._retry_or_cry(e)
-            else:
-                self._do_request()
+        time.sleep(self.retry_delay)
+        try:
+            self.offset = self.get_offset()
+        except TusCommunicationError as e:
+            print("[ERROR]: ", error)
+            self._retry_or_cry(e)
         else:
-            raise error
+            self._do_request()

@@ -1,6 +1,8 @@
 # Upload Test files
 upload_files
 
+db/key_url.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

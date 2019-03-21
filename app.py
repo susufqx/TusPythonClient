@@ -5,12 +5,8 @@ from tusclient.exceptions import TusUploadFailed
 
 
 request_headers = {
-    "Authorization": 'Basic xxyyZZAAbbCC=',
-    "X-Client-Version": '1',
-    "X-Country": '2',
-    "X-Lang": '3',
-    "X-Platform": '4',
-    "X-FileType": '5'
+    "Authorization": 'WldRh3Ys80fvtncvtu6UFGWsAjvlR93PYeyjvPZH51nyGhA51TT9at5w4lVMrGvc.87',
+    # "x-session": 'WldRh3Ys80fvtncvtu6UFGWsAjvlR93PYeyjvPZH51nyGhA51TT9at5w4lVMrGvc.87',
 }
 
 url = 'http://0.0.0.0:1080/files/'
